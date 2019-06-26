@@ -1,0 +1,19 @@
+{
+  "name": "teramind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "pug": "^2.0.4",
+    "sequelize": "^5.8.12",
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

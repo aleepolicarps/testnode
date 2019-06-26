@@ -1,0 +1,54 @@
+extends layout.pug
+
+block content 
+    p= error
+    h1= "Update User"
+    form(method='post' action='/update/'+user.id)
+        label= "Name:"
+        input(
+          type='text'
+          name='name'
+          placeholder='name'
+          value=user.name
+        )
+        br
+        label= "Phone:"        
+        input(
+          type='text'
+          name='phone'
+          placeholder='phone'
+          value=user.phone
+        )
+        br
+        label= "Email:"
+        input(
+          type='email'
+          name='email'
+          placeholder='email'
+          value=user.email
+        )        
+        br
+        label= "Password:"
+        input(
+          type='password'
+          name='password'
+          placeholder='password'
+          value=user.password
+        )
+        br
+        if currUser.isAdmin
+            input(
+              type='checkbox'
+              name='isAdmin'
+              checked=user.isAdmin
+              value=1
+            )
+            label="Admin"
+            br
+        input(
+          type='submit'
+        )
+        
+        
+    br
+    a(href="/login")="Update"
