@@ -15,7 +15,7 @@ app.use(express.urlencoded())
 
 app.get('/',  (req, res) => {
     if(!req.session.user) {
-      res.redirect('/login')
+      return res.redirect('/login')
     }
 
     models.User.findAll().then(users => {
