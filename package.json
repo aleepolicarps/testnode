@@ -9,7 +9,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-session": "^1.16.2",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "sequelize": "^5.8.12",
     "sqlite3": "^4.0.9"
   },
